@@ -7,14 +7,16 @@ const couponSchema = new mongoose.Schema({
     },
     discountPercecntage :{
         type :Number,
-        required : true
+        required : true,
+        min : 0,
+        max : 100
     },
     isActive : {
         type : Boolean,
         required : true
     },
     expirationDate : {
-        type : String,
+        type : Date,
         required : true
     },
     user : {

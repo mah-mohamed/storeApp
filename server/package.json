@@ -7,14 +7,14 @@
     "express": "^5.1.0",
     "ioredis": "^5.7.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.18.0"
+    "mongoose": "^8.18.0",
+    "stripe": "^18.5.0"
   },
   "name": "server",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "scripts": {
-    "dev" : "nodemon server.js",
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
