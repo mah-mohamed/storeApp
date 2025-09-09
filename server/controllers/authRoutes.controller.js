@@ -112,3 +112,12 @@ export async function refreshTokenFunc(req,res){
       return res.status(400).json({message: e.message})
     }
 }
+
+export function getProfile(req,res) {
+    try {
+        res.json(req.user)
+    } catch (error) {
+        console.log('error in getProfile')
+       res.status(400).json({message: e.message})
+    }
+}
