@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const NavBar = () => {
-  let user = true
+  let user = false
   let isAdmin = true
   const logout = ()=>{}
   let cart = { length : 3}
